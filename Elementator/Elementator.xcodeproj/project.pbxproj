@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1E0B973B17C819D2C395AA84 /* libPods-Elementator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48380997D2DAB3C8C9FBC13E /* libPods-Elementator.a */; };
+		C00D8AB52252A76700E64264 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8AB42252A76700E64264 /* IntroViewController.swift */; };
+		C00D8ABD2252A7F300E64264 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8ABC2252A7F300E64264 /* IntroPresenter.swift */; };
 		C043522D2252A27400DDA9CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043522C2252A27400DDA9CC /* AppDelegate.swift */; };
-		C043522F2252A27400DDA9CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043522E2252A27400DDA9CC /* ViewController.swift */; };
 		C04352322252A27400DDA9CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04352302252A27400DDA9CC /* Main.storyboard */; };
 		C04352352252A27400DDA9CC /* Elementator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C04352332252A27400DDA9CC /* Elementator.xcdatamodeld */; };
 		C04352372252A27500DDA9CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04352362252A27500DDA9CC /* Assets.xcassets */; };
@@ -38,9 +39,10 @@
 /* Begin PBXFileReference section */
 		48380997D2DAB3C8C9FBC13E /* libPods-Elementator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Elementator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4857EEA602EC66DCBEBC855F /* Pods-Elementator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elementator.release.xcconfig"; path = "Target Support Files/Pods-Elementator/Pods-Elementator.release.xcconfig"; sourceTree = "<group>"; };
+		C00D8AB42252A76700E64264 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		C00D8ABC2252A7F300E64264 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
 		C04352292252A27400DDA9CC /* Elementator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elementator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C043522C2252A27400DDA9CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C043522E2252A27400DDA9CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C04352312252A27400DDA9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C04352342252A27400DDA9CC /* Elementator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Elementator.xcdatamodel; sourceTree = "<group>"; };
 		C04352362252A27500DDA9CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,8 +89,37 @@
 				E35B9D40354597BFEBEC7F1F /* Pods-Elementator.debug.xcconfig */,
 				4857EEA602EC66DCBEBC855F /* Pods-Elementator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C00D8AB62252A77A00E64264 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C00D8ABC2252A7F300E64264 /* IntroPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C00D8AB72252A78600E64264 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C00D8AB42252A76700E64264 /* IntroViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C00D8AB82252A79100E64264 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C00D8AB92252A79F00E64264 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		C04352202252A27400DDA9CC = {
@@ -116,8 +147,11 @@
 		C043522B2252A27400DDA9CC /* Elementator */ = {
 			isa = PBXGroup;
 			children = (
+				C00D8AB92252A79F00E64264 /* Protocol */,
+				C00D8AB82252A79100E64264 /* Model */,
+				C00D8AB72252A78600E64264 /* View */,
+				C00D8AB62252A77A00E64264 /* Presenter */,
 				C043522C2252A27400DDA9CC /* AppDelegate.swift */,
-				C043522E2252A27400DDA9CC /* ViewController.swift */,
 				C04352302252A27400DDA9CC /* Main.storyboard */,
 				C04352362252A27500DDA9CC /* Assets.xcassets */,
 				C04352382252A27500DDA9CC /* LaunchScreen.storyboard */,
@@ -310,9 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00D8AB52252A76700E64264 /* IntroViewController.swift in Sources */,
 				C04352352252A27400DDA9CC /* Elementator.xcdatamodeld in Sources */,
-				C043522F2252A27400DDA9CC /* ViewController.swift in Sources */,
 				C043522D2252A27400DDA9CC /* AppDelegate.swift in Sources */,
+				C00D8ABD2252A7F300E64264 /* IntroPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
