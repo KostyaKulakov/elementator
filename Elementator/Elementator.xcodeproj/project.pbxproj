@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E0B973B17C819D2C395AA84 /* libPods-Elementator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48380997D2DAB3C8C9FBC13E /* libPods-Elementator.a */; };
 		C00D8AB52252A76700E64264 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8AB42252A76700E64264 /* IntroViewController.swift */; };
 		C00D8ABD2252A7F300E64264 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8ABC2252A7F300E64264 /* IntroPresenter.swift */; };
 		C00D8AC02252ADBF00E64264 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8ABF2252ADBF00E64264 /* UIViewController.swift */; };
@@ -19,6 +18,7 @@
 		C043523A2252A27500DDA9CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04352382252A27500DDA9CC /* LaunchScreen.storyboard */; };
 		C04352452252A27500DDA9CC /* ElementatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04352442252A27500DDA9CC /* ElementatorTests.swift */; };
 		C04352502252A27500DDA9CC /* ElementatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043524F2252A27500DDA9CC /* ElementatorUITests.swift */; };
+		DE7282AE66E8A9FA932485A0 /* Pods_Elementator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185B5060E051BDB666E7E017 /* Pods_Elementator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		48380997D2DAB3C8C9FBC13E /* libPods-Elementator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Elementator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		185B5060E051BDB666E7E017 /* Pods_Elementator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elementator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4857EEA602EC66DCBEBC855F /* Pods-Elementator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elementator.release.xcconfig"; path = "Target Support Files/Pods-Elementator/Pods-Elementator.release.xcconfig"; sourceTree = "<group>"; };
 		C00D8AB42252A76700E64264 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		C00D8ABC2252A7F300E64264 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E0B973B17C819D2C395AA84 /* libPods-Elementator.a in Frameworks */,
+				DE7282AE66E8A9FA932485A0 /* Pods_Elementator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +204,7 @@
 		DF4878A324F80E14861BCDCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				48380997D2DAB3C8C9FBC13E /* libPods-Elementator.a */,
+				185B5060E051BDB666E7E017 /* Pods_Elementator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,6 +220,7 @@
 				C04352252252A27400DDA9CC /* Sources */,
 				C04352262252A27400DDA9CC /* Frameworks */,
 				C04352272252A27400DDA9CC /* Resources */,
+				E4A03995E6E71495D71B6609 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,6 +358,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4A03995E6E71495D71B6609 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elementator/Pods-Elementator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Elementator/Pods-Elementator-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
