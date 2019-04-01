@@ -11,6 +11,7 @@
 		C00D8AB52252A76700E64264 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8AB42252A76700E64264 /* IntroViewController.swift */; };
 		C00D8ABD2252A7F300E64264 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8ABC2252A7F300E64264 /* IntroPresenter.swift */; };
 		C00D8AC02252ADBF00E64264 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8ABF2252ADBF00E64264 /* UIViewController.swift */; };
+		C00D8AC32252B24000E64264 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8AC22252B24000E64264 /* Server.swift */; };
 		C043522D2252A27400DDA9CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043522C2252A27400DDA9CC /* AppDelegate.swift */; };
 		C04352322252A27400DDA9CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04352302252A27400DDA9CC /* Main.storyboard */; };
 		C04352352252A27400DDA9CC /* Elementator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C04352332252A27400DDA9CC /* Elementator.xcdatamodeld */; };
@@ -43,6 +44,7 @@
 		C00D8AB42252A76700E64264 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		C00D8ABC2252A7F300E64264 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
 		C00D8ABF2252ADBF00E64264 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C00D8AC22252B24000E64264 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		C04352292252A27400DDA9CC /* Elementator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elementator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C043522C2252A27400DDA9CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C04352312252A27400DDA9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		C00D8AC12252B1E400E64264 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C00D8AC22252B24000E64264 /* Server.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		C04352202252A27400DDA9CC = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +167,7 @@
 		C043522B2252A27400DDA9CC /* Elementator */ = {
 			isa = PBXGroup;
 			children = (
+				C00D8AC12252B1E400E64264 /* Service */,
 				C00D8ABE2252AD9800E64264 /* Extension */,
 				C00D8AB92252A79F00E64264 /* Protocol */,
 				C00D8AB82252A79100E64264 /* Model */,
@@ -359,6 +370,7 @@
 				C04352352252A27400DDA9CC /* Elementator.xcdatamodeld in Sources */,
 				C043522D2252A27400DDA9CC /* AppDelegate.swift in Sources */,
 				C00D8ABD2252A7F300E64264 /* IntroPresenter.swift in Sources */,
+				C00D8AC32252B24000E64264 /* Server.swift in Sources */,
 				C00D8AC02252ADBF00E64264 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
