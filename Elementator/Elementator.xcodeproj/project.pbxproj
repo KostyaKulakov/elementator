@@ -11,6 +11,10 @@
 		C00D8ABD2252A7F300E64264 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8ABC2252A7F300E64264 /* IntroPresenter.swift */; };
 		C00D8AC02252ADBF00E64264 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8ABF2252ADBF00E64264 /* UIViewController.swift */; };
 		C00D8AC32252B24000E64264 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8AC22252B24000E64264 /* Server.swift */; };
+		C00D8AC62252D7DB00E64264 /* ElementorBoardTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8AC52252D7DB00E64264 /* ElementorBoardTableView.swift */; };
+		C00D8ACC2252D82900E64264 /* ElementorBoardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8ACB2252D82900E64264 /* ElementorBoardPresenter.swift */; };
+		C00D8ACE2252DDFB00E64264 /* ElementorBoardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8ACD2252DDFB00E64264 /* ElementorBoardViewCell.swift */; };
+		C00D8AD02252E8DF00E64264 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8ACF2252E8DF00E64264 /* UIImageView.swift */; };
 		C043522D2252A27400DDA9CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043522C2252A27400DDA9CC /* AppDelegate.swift */; };
 		C04352322252A27400DDA9CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04352302252A27400DDA9CC /* Main.storyboard */; };
 		C04352352252A27400DDA9CC /* Elementator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C04352332252A27400DDA9CC /* Elementator.xcdatamodeld */; };
@@ -45,6 +49,10 @@
 		C00D8ABC2252A7F300E64264 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
 		C00D8ABF2252ADBF00E64264 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C00D8AC22252B24000E64264 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		C00D8AC52252D7DB00E64264 /* ElementorBoardTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementorBoardTableView.swift; sourceTree = "<group>"; };
+		C00D8ACB2252D82900E64264 /* ElementorBoardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementorBoardPresenter.swift; sourceTree = "<group>"; };
+		C00D8ACD2252DDFB00E64264 /* ElementorBoardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementorBoardViewCell.swift; sourceTree = "<group>"; };
+		C00D8ACF2252E8DF00E64264 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		C04352292252A27400DDA9CC /* Elementator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elementator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C043522C2252A27400DDA9CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C04352312252A27400DDA9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				C00D8ABC2252A7F300E64264 /* IntroPresenter.swift */,
+				C00D8ACB2252D82900E64264 /* ElementorBoardPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -107,7 +116,9 @@
 		C00D8AB72252A78600E64264 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C00D8AC52252D7DB00E64264 /* ElementorBoardTableView.swift */,
 				C00D8AB42252A76700E64264 /* IntroViewController.swift */,
+				C00D8ACD2252DDFB00E64264 /* ElementorBoardViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				C00D8ABF2252ADBF00E64264 /* UIViewController.swift */,
+				C00D8ACF2252E8DF00E64264 /* UIImageView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -390,11 +402,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C00D8AB52252A76700E64264 /* IntroViewController.swift in Sources */,
+				C00D8AC62252D7DB00E64264 /* ElementorBoardTableView.swift in Sources */,
 				C04352352252A27400DDA9CC /* Elementator.xcdatamodeld in Sources */,
+				C00D8ACC2252D82900E64264 /* ElementorBoardPresenter.swift in Sources */,
 				C043522D2252A27400DDA9CC /* AppDelegate.swift in Sources */,
 				C00D8ABD2252A7F300E64264 /* IntroPresenter.swift in Sources */,
+				C00D8AD02252E8DF00E64264 /* UIImageView.swift in Sources */,
 				C00D8AC32252B24000E64264 /* Server.swift in Sources */,
 				C00D8AC02252ADBF00E64264 /* UIViewController.swift in Sources */,
+				C00D8ACE2252DDFB00E64264 /* ElementorBoardViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
