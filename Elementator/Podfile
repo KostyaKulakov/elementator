@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'Elementator' do
+	pod 'Alamofire', '~> 5.0.0-beta.3'
+end
